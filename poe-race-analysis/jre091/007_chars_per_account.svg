@@ -1,0 +1,1122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="chart-d338d9d2-44ac-4076-aa8d-073b036a842a" class="pygal-chart" viewBox="0 0 800 400">
+  <!--Generated with pygal 2.3.1 (lxml) ©Kozea 2012-2016 on 2017-07-06-->
+  <!--http://pygal.org-->
+  <!--http://github.com/Kozea/pygal-->
+  <defs>
+    <style type="text/css">/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Font-sizes from config, override with care
+ */
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a  {
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .title {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .legends .legend text {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis text {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis text.major {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .text-overlay text.value {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .text-overlay text.label {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 10px;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .tooltip {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a text.no_data {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 64px;
+}
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Styles from config
+ */
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a {
+  background-color: white;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a path,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a line,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a rect,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a circle {
+  -webkit-transition: 150ms;
+  -moz-transition: 150ms;
+  transition: 150ms;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .graph &gt; .background {
+  fill: white;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .plot &gt; .background {
+  fill: white;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .graph {
+  fill: rgba(0, 0, 0, .87);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a text.no_data {
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .title {
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .legends .legend text {
+  fill: rgba(0, 0, 0, .87);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .legends .legend:hover text {
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis .line {
+  stroke: rgba(0, 0, 0, 1);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis .guide.line {
+  stroke: rgba(0, 0, 0, .54);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis .major.line {
+  stroke: rgba(0, 0, 0, .87);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis text.major {
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.y .guides:hover .guide.line,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .line-graph .axis.x .guides:hover .guide.line,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .stackedline-graph .axis.x .guides:hover .guide.line,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .xy-graph .axis.x .guides:hover .guide.line {
+  stroke: rgba(0, 0, 0, 1);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis .guides:hover text {
+  fill: rgba(0, 0, 0, 1);
+}
+
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .reactive {
+  fill-opacity: 1;
+  stroke-opacity: .8;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .ci {
+    stroke: rgba(0, 0, 0, .87);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .reactive.active,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .active .reactive {
+  fill-opacity: .8;
+  stroke-opacity: .9;
+  stroke-width: 4;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .ci .reactive.active {
+  stroke-width: 1.5;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .series text {
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .tooltip rect {
+  fill: white;
+  stroke: rgba(0, 0, 0, 1);
+  -webkit-transition: opacity 150ms;
+  -moz-transition: opacity 150ms;
+  transition: opacity 150ms;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .tooltip .label {
+  fill: rgba(0, 0, 0, .87);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .tooltip .label {
+  fill: rgba(0, 0, 0, .87);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .tooltip .legend {
+  font-size: .8em;
+  fill: rgba(0, 0, 0, .54);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .tooltip .x_label {
+  font-size: .6em;
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .tooltip .xlink {
+  font-size: .5em;
+  text-decoration: underline;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .tooltip .value {
+  font-size: 1.5em;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .bound {
+  font-size: .5em;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .max-value {
+  font-size: .75em;
+  fill: rgba(0, 0, 0, .54);
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .map-element {
+  fill: white;
+  stroke: rgba(0, 0, 0, .54) !important;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .map-element .reactive {
+  fill-opacity: inherit;
+  stroke-opacity: inherit;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .color-0, #chart-d338d9d2-44ac-4076-aa8d-073b036a842a .color-0 a:visited {
+  stroke: #32a251;
+  fill: #32a251;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .color-1, #chart-d338d9d2-44ac-4076-aa8d-073b036a842a .color-1 a:visited {
+  stroke: #acd98d;
+  fill: #acd98d;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a  .text-overlay .color-0 text {
+  fill: white;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a  .text-overlay .color-1 text {
+  fill: black;
+}
+
+
+
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a text.no_data {
+  text-anchor: middle;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .guide.line {
+  fill: none;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .centered {
+  text-anchor: middle;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .title {
+  text-anchor: middle;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .legends .legend text {
+  fill-opacity: 1;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.x text {
+  text-anchor: middle;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.x:not(.web) text[transform] {
+  text-anchor: start;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.x:not(.web) text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.y text {
+  text-anchor: end;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.y text[transform].backwards {
+  text-anchor: start;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.y2 text {
+  text-anchor: start;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.y2 text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis .guide.line {
+  stroke-dasharray: 4,4;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis .major.guide.line {
+  stroke-dasharray: 6,6;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .horizontal .axis.y .guide.line,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .horizontal .axis.y2 .guide.line,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .vertical .axis.x .guide.line {
+  opacity: 0;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .horizontal .axis.always_show .guide.line,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .vertical .axis.always_show .guide.line {
+  opacity: 1 !important;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.y .guides:hover .guide.line,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.y2 .guides:hover .guide.line,
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis.x .guides:hover .guide.line {
+  opacity: 1;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .axis .guides:hover text {
+  opacity: 1;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .nofill {
+  fill: none;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .subtle-fill {
+  fill-opacity: .2;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .dot {
+  stroke-width: 1px;
+  fill-opacity: 1;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .dot.active {
+  stroke-width: 5px;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .dot.negative {
+  fill: transparent;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a  text, #chart-d338d9d2-44ac-4076-aa8d-073b036a842a  tspan {
+  stroke: none !important;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .series text.active {
+  opacity: 1;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .tooltip rect {
+  fill-opacity: .95;
+  stroke-width: .5;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .tooltip text {
+  fill-opacity: 1;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .showable {
+  visibility: hidden;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .showable.shown {
+  visibility: visible;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .gauge-background {
+  fill: rgba(229, 229, 229, 1);
+  stroke: none;
+}
+
+#chart-d338d9d2-44ac-4076-aa8d-073b036a842a .bg-lines {
+  stroke: white;
+  stroke-width: 2px;
+}
+</style>
+    <script type="text/javascript">window.pygal = window.pygal || {};window.pygal.config = window.pygal.config || {};window.pygal.config['d338d9d2-44ac-4076-aa8d-073b036a842a'] = {"allow_interruptions": false, "box_mode": "extremes", "classes": ["pygal-chart"], "css": ["file://style.css", "file://graph.css"], "defs": [], "disable_xml_declaration": false, "dots_size": 2.5, "dynamic_print_values": false, "explicit_size": false, "fill": false, "force_uri_protocol": "https", "formatter": null, "half_pie": false, "height": 400, "include_x_axis": false, "inner_radius": 0, "interpolate": null, "interpolation_parameters": {}, "interpolation_precision": 250, "inverse_y_axis": false, "js": ["//kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"], "legend_at_bottom": false, "legend_at_bottom_columns": null, "legend_box_size": 12, "logarithmic": false, "margin": 20, "margin_bottom": null, "margin_left": null, "margin_right": null, "margin_top": null, "max_scale": 16, "min_scale": 4, "missing_value_fill_truncation": "x", "no_data_text": "No data", "no_prefix": false, "order_min": null, "pretty_print": true, "print_labels": false, "print_values": false, "print_values_position": "center", "print_zeroes": true, "range": null, "rounded_bars": null, "secondary_range": null, "show_dots": true, "show_legend": true, "show_minor_x_labels": true, "show_minor_y_labels": true, "show_only_major_dots": false, "show_x_guides": false, "show_x_labels": false, "show_y_guides": false, "show_y_labels": true, "spacing": 10, "stack_from_top": true, "strict": false, "stroke": true, "stroke_style": null, "style": {"background": "white", "ci_colors": [], "colors": ["#32a251", "#acd98d", "#ff7f0f", "#ffb977", "#3cb7cc", "#98d9e4", "#b85a0d", "#ffd94a", "#39737c", "#86b4a9", "#82853b", "#ccc94d"], "font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "foreground": "rgba(0, 0, 0, .87)", "foreground_strong": "rgba(0, 0, 0, 1)", "foreground_subtle": "rgba(0, 0, 0, .54)", "guide_stroke_dasharray": "4,4", "label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "label_font_size": 16, "legend_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "legend_font_size": 14, "major_guide_stroke_dasharray": "6,6", "major_label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "major_label_font_size": 16, "no_data_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "no_data_font_size": 64, "opacity": 1, "opacity_hover": ".8", "plot_background": "white", "stroke_opacity": ".8", "stroke_opacity_hover": ".9", "title_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "title_font_size": 16, "tooltip_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "tooltip_font_size": 14, "transition": "150ms", "value_background": "rgba(229, 229, 229, 1)", "value_colors": ["white"], "value_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "value_font_size": 16, "value_label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "value_label_font_size": 10}, "title": "Number of characters in one account [Top 50]", "tooltip_border_radius": 0, "tooltip_fancy_mode": true, "truncate_label": null, "truncate_legend": null, "width": 800, "x_label_rotation": 0, "x_labels": null, "x_labels_major": null, "x_labels_major_count": null, "x_labels_major_every": null, "x_title": null, "xrange": null, "y_label_rotation": 0, "y_labels": null, "y_labels_major": null, "y_labels_major_count": null, "y_labels_major_every": null, "y_title": null, "zero": 0, "legends": ["Alive chars", "Dead chars"]}</script>
+    <script type="text/javascript" xlink:href="https://kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"/>
+  </defs>
+  <title>Number of characters in one account [Top 50]</title>
+  <g class="graph stackedbar-graph vertical">
+    <rect class="background" height="400" width="800" x="0" y="0"/>
+    <g class="plot" transform="translate(163, 46)">
+      <rect class="background" height="334" width="616.4000000000001" x="0" y="0"/>
+      <g class="axis y">
+        <g class="guides">
+          <text class="major" x="-5" y="333.1769230769231">0</text>
+          <title>0</title>
+        </g>
+        <g class="guides">
+          <text class="" x="-5" y="307.4846153846154">2</text>
+          <title>2</title>
+        </g>
+        <g class="guides">
+          <text class="" x="-5" y="281.7923076923077">4</text>
+          <title>4</title>
+        </g>
+        <g class="guides">
+          <text class="" x="-5" y="256.1">6</text>
+          <title>6</title>
+        </g>
+        <g class="guides">
+          <text class="" x="-5" y="230.40769230769232">8</text>
+          <title>8</title>
+        </g>
+        <g class="guides">
+          <text class="major" x="-5" y="204.7153846153846">10</text>
+          <title>10</title>
+        </g>
+        <g class="guides">
+          <text class="" x="-5" y="179.02307692307693">12</text>
+          <title>12</title>
+        </g>
+        <g class="guides">
+          <text class="" x="-5" y="153.33076923076922">14</text>
+          <title>14</title>
+        </g>
+        <g class="guides">
+          <text class="" x="-5" y="127.63846153846154">16</text>
+          <title>16</title>
+        </g>
+        <g class="guides">
+          <text class="" x="-5" y="101.94615384615383">18</text>
+          <title>18</title>
+        </g>
+        <g class="guides">
+          <text class="major" x="-5" y="76.25384615384613">20</text>
+          <title>20</title>
+        </g>
+        <g class="guides">
+          <text class="" x="-5" y="50.561538461538454">22</text>
+          <title>22</title>
+        </g>
+        <g class="guides">
+          <text class="" x="-5" y="24.869230769230775">24</text>
+          <title>24</title>
+        </g>
+      </g>
+      <g class="series serie-1 color-1">
+        <g class="bars">
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="321.1538461538462" rx="0" ry="0" width="10.431384615384616" x="12.565076923076925" y="6.423076923076906"/>
+            <desc class="value">25</desc>
+            <desc class="x centered">17.78076923076923</desc>
+            <desc class="y centered">167.0</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="256.92307692307696" rx="0" ry="0" width="10.431384615384616" x="24.418923076923083" y="70.65384615384613"/>
+            <desc class="value">20</desc>
+            <desc class="x centered">29.63461538461539</desc>
+            <desc class="y centered">199.1153846153846</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="218.38461538461542" rx="0" ry="0" width="10.431384615384616" x="36.27276923076923" y="109.19230769230768"/>
+            <desc class="value">17</desc>
+            <desc class="x centered">41.488461538461536</desc>
+            <desc class="y centered">218.3846153846154</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="192.6923076923077" rx="0" ry="0" width="10.431384615384616" x="48.12661538461539" y="134.8846153846154"/>
+            <desc class="value">15</desc>
+            <desc class="x centered">53.3423076923077</desc>
+            <desc class="y centered">231.23076923076923</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="192.6923076923077" rx="0" ry="0" width="10.431384615384616" x="59.98046153846155" y="134.8846153846154"/>
+            <desc class="value">15</desc>
+            <desc class="x centered">65.19615384615386</desc>
+            <desc class="y centered">231.23076923076923</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="179.84615384615387" rx="0" ry="0" width="10.431384615384616" x="71.8343076923077" y="147.73076923076923"/>
+            <desc class="value">14</desc>
+            <desc class="x centered">77.05000000000001</desc>
+            <desc class="y centered">237.65384615384616</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="192.6923076923077" rx="0" ry="0" width="10.431384615384616" x="83.68815384615385" y="134.8846153846154"/>
+            <desc class="value">15</desc>
+            <desc class="x centered">88.90384615384616</desc>
+            <desc class="y centered">231.23076923076923</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="192.6923076923077" rx="0" ry="0" width="10.431384615384616" x="95.54200000000002" y="134.8846153846154"/>
+            <desc class="value">15</desc>
+            <desc class="x centered">100.75769230769232</desc>
+            <desc class="y centered">231.23076923076923</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="141.30769230769232" rx="0" ry="0" width="10.431384615384616" x="107.39584615384616" y="186.26923076923077"/>
+            <desc class="value">11</desc>
+            <desc class="x centered">112.61153846153847</desc>
+            <desc class="y centered">256.9230769230769</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="167.00000000000003" rx="0" ry="0" width="10.431384615384616" x="119.2496923076923" y="160.57692307692307"/>
+            <desc class="value">13</desc>
+            <desc class="x centered">124.46538461538461</desc>
+            <desc class="y centered">244.0769230769231</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="154.15384615384616" rx="0" ry="0" width="10.431384615384616" x="131.1035384615385" y="173.42307692307693"/>
+            <desc class="value">12</desc>
+            <desc class="x centered">136.3192307692308</desc>
+            <desc class="y centered">250.5</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="154.15384615384616" rx="0" ry="0" width="10.431384615384616" x="142.95738461538463" y="173.42307692307693"/>
+            <desc class="value">12</desc>
+            <desc class="x centered">148.17307692307693</desc>
+            <desc class="y centered">250.5</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="141.30769230769232" rx="0" ry="0" width="10.431384615384616" x="154.8112307692308" y="186.26923076923077"/>
+            <desc class="value">11</desc>
+            <desc class="x centered">160.0269230769231</desc>
+            <desc class="y centered">256.9230769230769</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="128.46153846153848" rx="0" ry="0" width="10.431384615384616" x="166.66507692307698" y="199.1153846153846"/>
+            <desc class="value">10</desc>
+            <desc class="x centered">171.8807692307693</desc>
+            <desc class="y centered">263.34615384615387</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="154.15384615384616" rx="0" ry="0" width="10.431384615384616" x="178.51892307692313" y="173.42307692307693"/>
+            <desc class="value">12</desc>
+            <desc class="x centered">183.73461538461544</desc>
+            <desc class="y centered">250.5</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="141.30769230769232" rx="0" ry="0" width="10.431384615384616" x="190.37276923076928" y="186.26923076923077"/>
+            <desc class="value">11</desc>
+            <desc class="x centered">195.5884615384616</desc>
+            <desc class="y centered">256.9230769230769</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="128.46153846153848" rx="0" ry="0" width="10.431384615384616" x="202.22661538461543" y="199.1153846153846"/>
+            <desc class="value">10</desc>
+            <desc class="x centered">207.44230769230774</desc>
+            <desc class="y centered">263.34615384615387</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="141.30769230769232" rx="0" ry="0" width="10.431384615384616" x="214.0804615384616" y="186.26923076923077"/>
+            <desc class="value">11</desc>
+            <desc class="x centered">219.2961538461539</desc>
+            <desc class="y centered">256.9230769230769</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="141.30769230769232" rx="0" ry="0" width="10.431384615384616" x="225.93430769230773" y="186.26923076923077"/>
+            <desc class="value">11</desc>
+            <desc class="x centered">231.15000000000003</desc>
+            <desc class="y centered">256.9230769230769</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="141.30769230769232" rx="0" ry="0" width="10.431384615384616" x="237.7881538461539" y="186.26923076923077"/>
+            <desc class="value">11</desc>
+            <desc class="x centered">243.0038461538462</desc>
+            <desc class="y centered">256.9230769230769</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="141.30769230769232" rx="0" ry="0" width="10.431384615384616" x="249.64200000000008" y="186.26923076923077"/>
+            <desc class="value">11</desc>
+            <desc class="x centered">254.8576923076924</desc>
+            <desc class="y centered">256.9230769230769</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="141.30769230769232" rx="0" ry="0" width="10.431384615384616" x="261.49584615384623" y="186.26923076923077"/>
+            <desc class="value">11</desc>
+            <desc class="x centered">266.71153846153857</desc>
+            <desc class="y centered">256.9230769230769</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="128.46153846153848" rx="0" ry="0" width="10.431384615384616" x="273.34969230769235" y="199.1153846153846"/>
+            <desc class="value">10</desc>
+            <desc class="x centered">278.5653846153847</desc>
+            <desc class="y centered">263.34615384615387</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="102.76923076923077" rx="0" ry="0" width="10.431384615384616" x="285.2035384615385" y="224.80769230769232"/>
+            <desc class="value">8</desc>
+            <desc class="x centered">290.4192307692308</desc>
+            <desc class="y centered">276.19230769230774</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="115.61538461538464" rx="0" ry="0" width="10.431384615384616" x="297.05738461538465" y="211.96153846153845"/>
+            <desc class="value">9</desc>
+            <desc class="x centered">302.2730769230769</desc>
+            <desc class="y centered">269.7692307692308</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="128.46153846153848" rx="0" ry="0" width="10.431384615384616" x="308.9112307692308" y="199.1153846153846"/>
+            <desc class="value">10</desc>
+            <desc class="x centered">314.12692307692316</desc>
+            <desc class="y centered">263.34615384615387</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="128.46153846153848" rx="0" ry="0" width="10.431384615384616" x="320.76507692307695" y="199.1153846153846"/>
+            <desc class="value">10</desc>
+            <desc class="x centered">325.9807692307693</desc>
+            <desc class="y centered">263.34615384615387</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="128.46153846153848" rx="0" ry="0" width="10.431384615384616" x="332.6189230769232" y="199.1153846153846"/>
+            <desc class="value">10</desc>
+            <desc class="x centered">337.8346153846155</desc>
+            <desc class="y centered">263.34615384615387</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="102.76923076923077" rx="0" ry="0" width="10.431384615384616" x="344.47276923076936" y="224.80769230769232"/>
+            <desc class="value">8</desc>
+            <desc class="x centered">349.68846153846164</desc>
+            <desc class="y centered">276.19230769230774</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="115.61538461538464" rx="0" ry="0" width="10.431384615384616" x="356.3266153846154" y="211.96153846153845"/>
+            <desc class="value">9</desc>
+            <desc class="x centered">361.54230769230776</desc>
+            <desc class="y centered">269.7692307692308</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="128.46153846153848" rx="0" ry="0" width="10.431384615384616" x="368.1804615384616" y="199.1153846153846"/>
+            <desc class="value">10</desc>
+            <desc class="x centered">373.3961538461539</desc>
+            <desc class="y centered">263.34615384615387</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="128.46153846153848" rx="0" ry="0" width="10.431384615384616" x="380.0343076923078" y="199.1153846153846"/>
+            <desc class="value">10</desc>
+            <desc class="x centered">385.2500000000001</desc>
+            <desc class="y centered">263.34615384615387</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="128.46153846153848" rx="0" ry="0" width="10.431384615384616" x="391.8881538461539" y="199.1153846153846"/>
+            <desc class="value">10</desc>
+            <desc class="x centered">397.10384615384623</desc>
+            <desc class="y centered">263.34615384615387</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="115.61538461538464" rx="0" ry="0" width="10.431384615384616" x="403.7420000000001" y="211.96153846153845"/>
+            <desc class="value">9</desc>
+            <desc class="x centered">408.95769230769235</desc>
+            <desc class="y centered">269.7692307692308</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="102.76923076923077" rx="0" ry="0" width="10.431384615384616" x="415.59584615384625" y="224.80769230769232"/>
+            <desc class="value">8</desc>
+            <desc class="x centered">420.8115384615386</desc>
+            <desc class="y centered">276.19230769230774</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="77.0769230769231" rx="0" ry="0" width="10.431384615384616" x="427.4496923076924" y="250.5"/>
+            <desc class="value">6</desc>
+            <desc class="x centered">432.6653846153847</desc>
+            <desc class="y centered">289.03846153846155</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="51.384615384615415" rx="0" ry="0" width="10.431384615384616" x="439.30353846153855" y="276.1923076923077"/>
+            <desc class="value">4</desc>
+            <desc class="x centered">444.51923076923083</desc>
+            <desc class="y centered">301.88461538461536</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="115.61538461538464" rx="0" ry="0" width="10.431384615384616" x="451.1573846153847" y="211.96153846153845"/>
+            <desc class="value">9</desc>
+            <desc class="x centered">456.37307692307695</desc>
+            <desc class="y centered">269.7692307692308</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="115.61538461538464" rx="0" ry="0" width="10.431384615384616" x="463.01123076923085" y="211.96153846153845"/>
+            <desc class="value">9</desc>
+            <desc class="x centered">468.2269230769232</desc>
+            <desc class="y centered">269.7692307692308</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="51.384615384615415" rx="0" ry="0" width="10.431384615384616" x="474.865076923077" y="276.1923076923077"/>
+            <desc class="value">4</desc>
+            <desc class="x centered">480.0807692307693</desc>
+            <desc class="y centered">301.88461538461536</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="115.61538461538464" rx="0" ry="0" width="10.431384615384616" x="486.71892307692315" y="211.96153846153845"/>
+            <desc class="value">9</desc>
+            <desc class="x centered">491.9346153846154</desc>
+            <desc class="y centered">269.7692307692308</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="115.61538461538464" rx="0" ry="0" width="10.431384615384616" x="498.57276923076927" y="211.96153846153845"/>
+            <desc class="value">9</desc>
+            <desc class="x centered">503.78846153846155</desc>
+            <desc class="y centered">269.7692307692308</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="115.61538461538464" rx="0" ry="0" width="10.431384615384616" x="510.42661538461545" y="211.96153846153845"/>
+            <desc class="value">9</desc>
+            <desc class="x centered">515.6423076923078</desc>
+            <desc class="y centered">269.7692307692308</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="115.61538461538464" rx="0" ry="0" width="10.431384615384616" x="522.2804615384616" y="211.96153846153845"/>
+            <desc class="value">9</desc>
+            <desc class="x centered">527.4961538461539</desc>
+            <desc class="y centered">269.7692307692308</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="102.76923076923077" rx="0" ry="0" width="10.431384615384616" x="534.1343076923077" y="224.80769230769232"/>
+            <desc class="value">8</desc>
+            <desc class="x centered">539.35</desc>
+            <desc class="y centered">276.19230769230774</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="102.76923076923077" rx="0" ry="0" width="10.431384615384616" x="545.9881538461539" y="224.80769230769232"/>
+            <desc class="value">8</desc>
+            <desc class="x centered">551.2038461538461</desc>
+            <desc class="y centered">276.19230769230774</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="102.76923076923077" rx="0" ry="0" width="10.431384615384616" x="557.8420000000001" y="224.80769230769232"/>
+            <desc class="value">8</desc>
+            <desc class="x centered">563.0576923076924</desc>
+            <desc class="y centered">276.19230769230774</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="89.92307692307693" rx="0" ry="0" width="10.431384615384616" x="569.6958461538461" y="237.65384615384616"/>
+            <desc class="value">7</desc>
+            <desc class="x centered">574.9115384615384</desc>
+            <desc class="y centered">282.61538461538464</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="89.92307692307693" rx="0" ry="0" width="10.431384615384616" x="581.5496923076923" y="237.65384615384616"/>
+            <desc class="value">7</desc>
+            <desc class="x centered">586.7653846153846</desc>
+            <desc class="y centered">282.61538461538464</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="115.61538461538464" rx="0" ry="0" width="10.431384615384616" x="593.4035384615385" y="211.96153846153845"/>
+            <desc class="value">9</desc>
+            <desc class="x centered">598.6192307692307</desc>
+            <desc class="y centered">269.7692307692308</desc>
+          </g>
+        </g>
+      </g>
+      <g class="series serie-0 color-0">
+        <g class="bars">
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="12.565076923076925" y="6.423076923076906"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">17.78076923076923</desc>
+            <desc class="y centered">6.423076923076906</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="24.418923076923083" y="70.65384615384613"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">29.63461538461539</desc>
+            <desc class="y centered">70.65384615384613</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.84615384615384" rx="0" ry="0" width="10.431384615384616" x="36.27276923076923" y="96.34615384615384"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">41.488461538461536</desc>
+            <desc class="y centered">102.76923076923076</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="48.12661538461539" y="134.8846153846154"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">53.3423076923077</desc>
+            <desc class="y centered">134.8846153846154</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="59.98046153846155" y="134.8846153846154"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">65.19615384615386</desc>
+            <desc class="y centered">134.8846153846154</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.84615384615384" rx="0" ry="0" width="10.431384615384616" x="71.8343076923077" y="134.8846153846154"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">77.05000000000001</desc>
+            <desc class="y centered">141.30769230769232</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="83.68815384615385" y="134.8846153846154"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">88.90384615384616</desc>
+            <desc class="y centered">134.8846153846154</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="95.54200000000002" y="134.8846153846154"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">100.75769230769232</desc>
+            <desc class="y centered">134.8846153846154</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="25.692307692307708" rx="0" ry="0" width="10.431384615384616" x="107.39584615384616" y="160.57692307692307"/>
+            <desc class="value">2</desc>
+            <desc class="x centered">112.61153846153847</desc>
+            <desc class="y centered">173.4230769230769</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="119.2496923076923" y="160.57692307692307"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">124.46538461538461</desc>
+            <desc class="y centered">160.57692307692307</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="131.1035384615385" y="173.42307692307693"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">136.3192307692308</desc>
+            <desc class="y centered">173.42307692307693</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="142.95738461538463" y="173.42307692307693"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">148.17307692307693</desc>
+            <desc class="y centered">173.42307692307693</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.84615384615384" rx="0" ry="0" width="10.431384615384616" x="154.8112307692308" y="173.42307692307693"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">160.0269230769231</desc>
+            <desc class="y centered">179.84615384615387</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="25.69230769230768" rx="0" ry="0" width="10.431384615384616" x="166.66507692307698" y="173.42307692307693"/>
+            <desc class="value">2</desc>
+            <desc class="x centered">171.8807692307693</desc>
+            <desc class="y centered">186.26923076923077</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="178.51892307692313" y="173.42307692307693"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">183.73461538461544</desc>
+            <desc class="y centered">173.42307692307693</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="190.37276923076928" y="186.26923076923077"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">195.5884615384616</desc>
+            <desc class="y centered">186.26923076923077</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.84615384615384" rx="0" ry="0" width="10.431384615384616" x="202.22661538461543" y="186.26923076923077"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">207.44230769230774</desc>
+            <desc class="y centered">192.69230769230768</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="214.0804615384616" y="186.26923076923077"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">219.2961538461539</desc>
+            <desc class="y centered">186.26923076923077</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="225.93430769230773" y="186.26923076923077"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">231.15000000000003</desc>
+            <desc class="y centered">186.26923076923077</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="237.7881538461539" y="186.26923076923077"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">243.0038461538462</desc>
+            <desc class="y centered">186.26923076923077</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="249.64200000000008" y="186.26923076923077"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">254.8576923076924</desc>
+            <desc class="y centered">186.26923076923077</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="261.49584615384623" y="186.26923076923077"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">266.71153846153857</desc>
+            <desc class="y centered">186.26923076923077</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="273.34969230769235" y="199.1153846153846"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">278.5653846153847</desc>
+            <desc class="y centered">199.1153846153846</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="25.692307692307708" rx="0" ry="0" width="10.431384615384616" x="285.2035384615385" y="199.1153846153846"/>
+            <desc class="value">2</desc>
+            <desc class="x centered">290.4192307692308</desc>
+            <desc class="y centered">211.96153846153845</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.84615384615384" rx="0" ry="0" width="10.431384615384616" x="297.05738461538465" y="199.1153846153846"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">302.2730769230769</desc>
+            <desc class="y centered">205.53846153846155</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="308.9112307692308" y="199.1153846153846"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">314.12692307692316</desc>
+            <desc class="y centered">199.1153846153846</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="320.76507692307695" y="199.1153846153846"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">325.9807692307693</desc>
+            <desc class="y centered">199.1153846153846</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="332.6189230769232" y="199.1153846153846"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">337.8346153846155</desc>
+            <desc class="y centered">199.1153846153846</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="25.692307692307708" rx="0" ry="0" width="10.431384615384616" x="344.47276923076936" y="199.1153846153846"/>
+            <desc class="value">2</desc>
+            <desc class="x centered">349.68846153846164</desc>
+            <desc class="y centered">211.96153846153845</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.84615384615384" rx="0" ry="0" width="10.431384615384616" x="356.3266153846154" y="199.1153846153846"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">361.54230769230776</desc>
+            <desc class="y centered">205.53846153846155</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="368.1804615384616" y="199.1153846153846"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">373.3961538461539</desc>
+            <desc class="y centered">199.1153846153846</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="380.0343076923078" y="199.1153846153846"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">385.2500000000001</desc>
+            <desc class="y centered">199.1153846153846</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="391.8881538461539" y="199.1153846153846"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">397.10384615384623</desc>
+            <desc class="y centered">199.1153846153846</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.84615384615384" rx="0" ry="0" width="10.431384615384616" x="403.7420000000001" y="199.1153846153846"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">408.95769230769235</desc>
+            <desc class="y centered">205.53846153846155</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.846153846153868" rx="0" ry="0" width="10.431384615384616" x="415.59584615384625" y="211.96153846153845"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">420.8115384615386</desc>
+            <desc class="y centered">218.3846153846154</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="38.53846153846155" rx="0" ry="0" width="10.431384615384616" x="427.4496923076924" y="211.96153846153845"/>
+            <desc class="value">3</desc>
+            <desc class="x centered">432.6653846153847</desc>
+            <desc class="y centered">231.23076923076923</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="64.23076923076923" rx="0" ry="0" width="10.431384615384616" x="439.30353846153855" y="211.96153846153845"/>
+            <desc class="value">5</desc>
+            <desc class="x centered">444.51923076923083</desc>
+            <desc class="y centered">244.07692307692307</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="451.1573846153847" y="211.96153846153845"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">456.37307692307695</desc>
+            <desc class="y centered">211.96153846153845</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="463.01123076923085" y="211.96153846153845"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">468.2269230769232</desc>
+            <desc class="y centered">211.96153846153845</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="64.23076923076923" rx="0" ry="0" width="10.431384615384616" x="474.865076923077" y="211.96153846153845"/>
+            <desc class="value">5</desc>
+            <desc class="x centered">480.0807692307693</desc>
+            <desc class="y centered">244.07692307692307</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="486.71892307692315" y="211.96153846153845"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">491.9346153846154</desc>
+            <desc class="y centered">211.96153846153845</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="498.57276923076927" y="211.96153846153845"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">503.78846153846155</desc>
+            <desc class="y centered">211.96153846153845</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="510.42661538461545" y="211.96153846153845"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">515.6423076923078</desc>
+            <desc class="y centered">211.96153846153845</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="522.2804615384616" y="211.96153846153845"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">527.4961538461539</desc>
+            <desc class="y centered">211.96153846153845</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.846153846153868" rx="0" ry="0" width="10.431384615384616" x="534.1343076923077" y="211.96153846153845"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">539.35</desc>
+            <desc class="y centered">218.3846153846154</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.846153846153868" rx="0" ry="0" width="10.431384615384616" x="545.9881538461539" y="211.96153846153845"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">551.2038461538461</desc>
+            <desc class="y centered">218.3846153846154</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="12.846153846153868" rx="0" ry="0" width="10.431384615384616" x="557.8420000000001" y="211.96153846153845"/>
+            <desc class="value">1</desc>
+            <desc class="x centered">563.0576923076924</desc>
+            <desc class="y centered">218.3846153846154</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="25.692307692307708" rx="0" ry="0" width="10.431384615384616" x="569.6958461538461" y="211.96153846153845"/>
+            <desc class="value">2</desc>
+            <desc class="x centered">574.9115384615384</desc>
+            <desc class="y centered">224.80769230769232</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="25.692307692307708" rx="0" ry="0" width="10.431384615384616" x="581.5496923076923" y="211.96153846153845"/>
+            <desc class="value">2</desc>
+            <desc class="x centered">586.7653846153846</desc>
+            <desc class="y centered">224.80769230769232</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="0.0" rx="0" ry="0" width="10.431384615384616" x="593.4035384615385" y="211.96153846153845"/>
+            <desc class="value">0</desc>
+            <desc class="x centered">598.6192307692307</desc>
+            <desc class="y centered">211.96153846153845</desc>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g class="titles">
+      <text class="title plot_title" x="400.0" y="26">Number of characters in one account [Top 50]</text>
+    </g>
+    <g class="plot overlay" transform="translate(163, 46)">
+      <g class="series serie-1 color-1"/>
+      <g class="series serie-0 color-0"/>
+    </g>
+    <g class="plot text-overlay" transform="translate(163, 46)">
+      <g class="series serie-1 color-1"/>
+      <g class="series serie-0 color-0"/>
+    </g>
+    <g class="plot tooltip-overlay" transform="translate(163, 46)">
+      <g class="tooltip" style="opacity: 0" transform="translate(0 0)">
+        <rect class="tooltip-box" height="0" rx="0" ry="0" width="0"/>
+        <g class="text"/>
+      </g>
+    </g>
+    <g class="legends" transform="translate(10, 56)">
+      <g class="legend reactive activate-serie" id="activate-serie-0">
+        <rect class="color-0 reactive" height="12" width="12" x="0.0" y="1.0"/>
+        <text x="17.0" y="11.2">Alive chars</text>
+      </g>
+      <g class="legend reactive activate-serie" id="activate-serie-1">
+        <rect class="color-1 reactive" height="12" width="12" x="0.0" y="22.0"/>
+        <text x="17.0" y="32.2">Dead chars</text>
+      </g>
+    </g>
+    <g class="legends" transform="translate(790, 56)"/>
+  </g>
+</svg>
