@@ -1,0 +1,536 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="chart-2a234504-23d2-4e13-9265-364537eb0570" class="pygal-chart" viewBox="0 0 800 400">
+  <!--Generated with pygal 2.3.1 (lxml) ©Kozea 2012-2016 on 2017-07-31-->
+  <!--http://pygal.org-->
+  <!--http://github.com/Kozea/pygal-->
+  <defs>
+    <style type="text/css">/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Font-sizes from config, override with care
+ */
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570  {
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .title {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .legends .legend text {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis text {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis text.major {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .text-overlay text.value {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 20px;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .text-overlay text.label {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 10px;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .tooltip {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 text.no_data {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 64px;
+}
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Styles from config
+ */
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 {
+  background-color: white;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 path,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 line,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 rect,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 circle {
+  -webkit-transition: 150ms;
+  -moz-transition: 150ms;
+  transition: 150ms;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .graph &gt; .background {
+  fill: white;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .plot &gt; .background {
+  fill: white;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .graph {
+  fill: rgba(0, 0, 0, .87);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 text.no_data {
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .title {
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .legends .legend text {
+  fill: rgba(0, 0, 0, .87);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .legends .legend:hover text {
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis .line {
+  stroke: rgba(0, 0, 0, 1);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis .guide.line {
+  stroke: rgba(0, 0, 0, .54);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis .major.line {
+  stroke: rgba(0, 0, 0, .87);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis text.major {
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.y .guides:hover .guide.line,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .line-graph .axis.x .guides:hover .guide.line,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .stackedline-graph .axis.x .guides:hover .guide.line,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .xy-graph .axis.x .guides:hover .guide.line {
+  stroke: rgba(0, 0, 0, 1);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis .guides:hover text {
+  fill: rgba(0, 0, 0, 1);
+}
+
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .reactive {
+  fill-opacity: 1;
+  stroke-opacity: .8;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .ci {
+    stroke: rgba(0, 0, 0, .87);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .reactive.active,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .active .reactive {
+  fill-opacity: .8;
+  stroke-opacity: .9;
+  stroke-width: 4;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .ci .reactive.active {
+  stroke-width: 1.5;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .series text {
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .tooltip rect {
+  fill: white;
+  stroke: rgba(0, 0, 0, 1);
+  -webkit-transition: opacity 150ms;
+  -moz-transition: opacity 150ms;
+  transition: opacity 150ms;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .tooltip .label {
+  fill: rgba(0, 0, 0, .87);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .tooltip .label {
+  fill: rgba(0, 0, 0, .87);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .tooltip .legend {
+  font-size: .8em;
+  fill: rgba(0, 0, 0, .54);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .tooltip .x_label {
+  font-size: .6em;
+  fill: rgba(0, 0, 0, 1);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .tooltip .xlink {
+  font-size: .5em;
+  text-decoration: underline;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .tooltip .value {
+  font-size: 1.5em;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .bound {
+  font-size: .5em;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .max-value {
+  font-size: .75em;
+  fill: rgba(0, 0, 0, .54);
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .map-element {
+  fill: white;
+  stroke: rgba(0, 0, 0, .54) !important;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .map-element .reactive {
+  fill-opacity: inherit;
+  stroke-opacity: inherit;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .color-0, #chart-2a234504-23d2-4e13-9265-364537eb0570 .color-0 a:visited {
+  stroke: #32a251;
+  fill: #32a251;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570  .text-overlay .color-0 text {
+  fill: black;
+}
+
+
+
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 text.no_data {
+  text-anchor: middle;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .guide.line {
+  fill: none;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .centered {
+  text-anchor: middle;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .title {
+  text-anchor: middle;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .legends .legend text {
+  fill-opacity: 1;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.x text {
+  text-anchor: middle;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.x:not(.web) text[transform] {
+  text-anchor: start;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.x:not(.web) text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.y text {
+  text-anchor: end;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.y text[transform].backwards {
+  text-anchor: start;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.y2 text {
+  text-anchor: start;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.y2 text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis .guide.line {
+  stroke-dasharray: 4,4;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis .major.guide.line {
+  stroke-dasharray: 6,6;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .horizontal .axis.y .guide.line,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .horizontal .axis.y2 .guide.line,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .vertical .axis.x .guide.line {
+  opacity: 0;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .horizontal .axis.always_show .guide.line,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .vertical .axis.always_show .guide.line {
+  opacity: 1 !important;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.y .guides:hover .guide.line,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.y2 .guides:hover .guide.line,
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis.x .guides:hover .guide.line {
+  opacity: 1;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .axis .guides:hover text {
+  opacity: 1;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .nofill {
+  fill: none;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .subtle-fill {
+  fill-opacity: .2;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .dot {
+  stroke-width: 1px;
+  fill-opacity: 1;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .dot.active {
+  stroke-width: 5px;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .dot.negative {
+  fill: transparent;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570  text, #chart-2a234504-23d2-4e13-9265-364537eb0570  tspan {
+  stroke: none !important;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .series text.active {
+  opacity: 1;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .tooltip rect {
+  fill-opacity: .95;
+  stroke-width: .5;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .tooltip text {
+  fill-opacity: 1;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .showable {
+  visibility: hidden;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .showable.shown {
+  visibility: visible;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .gauge-background {
+  fill: rgba(229, 229, 229, 1);
+  stroke: none;
+}
+
+#chart-2a234504-23d2-4e13-9265-364537eb0570 .bg-lines {
+  stroke: white;
+  stroke-width: 2px;
+}
+</style>
+    <script type="text/javascript">window.pygal = window.pygal || {};window.pygal.config = window.pygal.config || {};window.pygal.config['2a234504-23d2-4e13-9265-364537eb0570'] = {"allow_interruptions": false, "box_mode": "extremes", "classes": ["pygal-chart"], "css": ["file://style.css", "file://graph.css"], "defs": [], "disable_xml_declaration": false, "dots_size": 2.5, "dynamic_print_values": false, "explicit_size": false, "fill": false, "force_uri_protocol": "https", "formatter": null, "half_pie": false, "height": 400, "include_x_axis": false, "inner_radius": 0, "interpolate": null, "interpolation_parameters": {}, "interpolation_precision": 250, "inverse_y_axis": false, "js": ["//kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"], "legend_at_bottom": false, "legend_at_bottom_columns": null, "legend_box_size": 12, "logarithmic": false, "margin": 20, "margin_bottom": null, "margin_left": null, "margin_right": null, "margin_top": null, "max_scale": 16, "min_scale": 4, "missing_value_fill_truncation": "x", "no_data_text": "No data", "no_prefix": false, "order_min": null, "pretty_print": true, "print_labels": false, "print_values": true, "print_values_position": "center", "print_zeroes": true, "range": null, "rounded_bars": null, "secondary_range": null, "show_dots": true, "show_legend": false, "show_minor_x_labels": true, "show_minor_y_labels": true, "show_only_major_dots": false, "show_x_guides": false, "show_x_labels": false, "show_y_guides": true, "show_y_labels": true, "spacing": 10, "stack_from_top": false, "strict": false, "stroke": true, "stroke_style": null, "style": {"background": "white", "ci_colors": [], "colors": ["#32a251", "#acd98d", "#ff7f0f", "#ffb977", "#3cb7cc", "#98d9e4", "#b85a0d", "#ffd94a", "#39737c", "#86b4a9", "#82853b", "#ccc94d"], "font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "foreground": "rgba(0, 0, 0, .87)", "foreground_strong": "rgba(0, 0, 0, 1)", "foreground_subtle": "rgba(0, 0, 0, .54)", "guide_stroke_dasharray": "4,4", "label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "label_font_size": 16, "legend_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "legend_font_size": 14, "major_guide_stroke_dasharray": "6,6", "major_label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "major_label_font_size": 16, "no_data_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "no_data_font_size": 64, "opacity": 1, "opacity_hover": ".8", "plot_background": "white", "stroke_opacity": ".8", "stroke_opacity_hover": ".9", "title_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "title_font_size": 16, "tooltip_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "tooltip_font_size": 14, "transition": "150ms", "value_background": "rgba(229, 229, 229, 1)", "value_colors": ["black"], "value_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "value_font_size": 20, "value_label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "value_label_font_size": 10}, "title": "Number of characters, by class", "tooltip_border_radius": 0, "tooltip_fancy_mode": true, "truncate_label": null, "truncate_legend": null, "width": 800, "x_label_rotation": 0, "x_labels": ["Scion", "Templar", "Shadow", "Marauder", "Ranger", "Duelist", "Witch"], "x_labels_major": null, "x_labels_major_count": null, "x_labels_major_every": null, "x_title": null, "xrange": null, "y_label_rotation": 0, "y_labels": null, "y_labels_major": null, "y_labels_major_count": null, "y_labels_major_every": null, "y_title": null, "zero": 0, "legends": [""]}</script>
+    <script type="text/javascript" xlink:href="https://kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"/>
+  </defs>
+  <title>Number of characters, by class</title>
+  <g class="graph horizontalbar-graph horizontal">
+    <rect class="background" height="400" width="800" x="0" y="0"/>
+    <g class="plot" transform="translate(106, 46)">
+      <rect class="background" height="334" width="673.2" x="0" y="0"/>
+      <g class="axis y">
+        <g class="guides">
+          <path class="guide line" d="M0.000000 304.637363 h673.200000"/>
+          <text class="" x="-5" y="310.23736263736265">Scion</text>
+          <title>0.07142857143</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 258.758242 h673.200000"/>
+          <text class="" x="-5" y="264.3582417582418">Templar</text>
+          <title>0.2142857143</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 212.879121 h673.200000"/>
+          <text class="" x="-5" y="218.47912087912087">Shadow</text>
+          <title>0.3571428571</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 167.000000 h673.200000"/>
+          <text class="" x="-5" y="172.6">Marauder</text>
+          <title>0.5</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 121.120879 h673.200000"/>
+          <text class="" x="-5" y="126.72087912087912">Ranger</text>
+          <title>0.6428571429</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 75.241758 h673.200000"/>
+          <text class="" x="-5" y="80.84175824175824">Duelist</text>
+          <title>0.7857142857</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 29.362637 h673.200000"/>
+          <text class="" x="-5" y="34.96263736263732">Witch</text>
+          <title>0.9285714286</title>
+        </g>
+      </g>
+      <g class="series serie-0 color-0">
+        <g class="bars">
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="35.52879120879121" rx="0" ry="0" width="140.57237932324796" x="12.946153846153862" y="286.872967032967"/>
+            <desc class="value">625</desc>
+            <desc class="x centered">83.23234350777784</desc>
+            <desc class="y centered">304.6373626373626</desc>
+            <desc class="x_label">Scion</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="35.52879120879121" rx="0" ry="0" width="358.96562783984604" x="12.946153846153834" y="240.99384615384614"/>
+            <desc class="value">1596</desc>
+            <desc class="x centered">192.42896776607685</desc>
+            <desc class="y centered">258.75824175824175</desc>
+            <desc class="x_label">Templar</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="35.52879120879121" rx="0" ry="0" width="420.1427273213236" x="12.946153846153834" y="195.11472527472532"/>
+            <desc class="value">1868</desc>
+            <desc class="x centered">223.01751750681564</desc>
+            <desc class="y centered">212.8791208791209</desc>
+            <desc class="x_label">Shadow</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="35.52879120879121" rx="0" ry="0" width="484.0188164858075" x="12.946153846153834" y="149.2356043956044"/>
+            <desc class="value">2152</desc>
+            <desc class="x centered">254.9555620890576</desc>
+            <desc class="y centered">167.0</desc>
+            <desc class="x_label">Marauder</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="35.52879120879121" rx="0" ry="0" width="521.8046720478966" x="12.946153846153834" y="103.35648351648356"/>
+            <desc class="value">2320</desc>
+            <desc class="x centered">273.8484898701021</desc>
+            <desc class="y centered">121.12087912087917</desc>
+            <desc class="x_label">Ranger</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="35.52879120879121" rx="0" ry="0" width="576.009381514941" x="12.946153846153834" y="57.47736263736261"/>
+            <desc class="value">2561</desc>
+            <desc class="x centered">300.9508446036243</desc>
+            <desc class="y centered">75.24175824175822</desc>
+            <desc class="x_label">Duelist</desc>
+          </g>
+          <g class="bar">
+            <rect class="rect reactive tooltip-trigger" height="35.52879120879121" rx="0" ry="0" width="647.3076923076924" x="12.946153846153834" y="11.598241758241791"/>
+            <desc class="value">2878</desc>
+            <desc class="x centered">336.6</desc>
+            <desc class="y centered">29.362637362637397</desc>
+            <desc class="x_label">Witch</desc>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g class="titles">
+      <text class="title plot_title" x="400.0" y="26">Number of characters, by class</text>
+    </g>
+    <g class="plot overlay" transform="translate(106, 46)">
+      <g class="series serie-0 color-0"/>
+    </g>
+    <g class="plot text-overlay" transform="translate(106, 46)">
+      <g class="series serie-0 color-0">
+        <text class="value" text-anchor="middle" x="83.23234350777784" y="311.3040293040293">625</text>
+        <text class="value" text-anchor="middle" x="192.42896776607685" y="265.42490842490844">1596</text>
+        <text class="value" text-anchor="middle" x="223.01751750681564" y="219.54578754578756">1868</text>
+        <text class="value" text-anchor="middle" x="254.9555620890576" y="173.66666666666666">2152</text>
+        <text class="value" text-anchor="middle" x="273.8484898701021" y="127.78754578754584">2320</text>
+        <text class="value" text-anchor="middle" x="300.9508446036243" y="81.90842490842489">2561</text>
+        <text class="value" text-anchor="middle" x="336.6" y="36.029304029304065">2878</text>
+      </g>
+    </g>
+    <g class="plot tooltip-overlay" transform="translate(106, 46)">
+      <g class="tooltip" style="opacity: 0" transform="translate(0 0)">
+        <rect class="tooltip-box" height="0" rx="0" ry="0" width="0"/>
+        <g class="text"/>
+      </g>
+    </g>
+  </g>
+</svg>
